@@ -19,7 +19,12 @@ import { VistarCronogramaComponent } from './cronograma/vistar-cronograma/vistar
 import { EditarCronogramaComponent } from './cronograma/editar-cronograma/editar-cronograma.component';
 import { EliminarCronogramaComponent } from './cronograma/eliminar-cronograma/eliminar-cronograma.component';
 import { LoginComponent } from './login/login/login.component';
-import { DashboardComponent } from './estadisticas/dashboard/dashboard.component';
+import { CrearVotanteComponent } from './votante/crear-votante/crear-votante.component';
+import { EditarVotanteComponent } from './votante/editar-votante/editar-votante.component';
+import { EliminarVotanteComponent } from './votante/eliminar-votante/eliminar-votante.component';
+import { VistarVotanteComponent } from './votante/vistar-votante/vistar-votante.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -41,10 +46,15 @@ import { DashboardComponent } from './estadisticas/dashboard/dashboard.component
     EditarCronogramaComponent,
     EliminarCronogramaComponent,
     LoginComponent,
+    CrearVotanteComponent,
+    EditarVotanteComponent,
+    EliminarVotanteComponent,
+    VistarVotanteComponent,
     DashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
